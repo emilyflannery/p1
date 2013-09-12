@@ -1,3 +1,19 @@
+@font-face {  
+  font-family: "neuzeit-light";  
+  src:  url('../fonts/neuzeit/neuzeit-light.ttf') format('truetype'),  
+        url('../fonts/neuzeit/neuzeit-light.otf') format('opentype'),  
+        url('../fonts/neuzeit/neuzeit-light.woff') format('woff'),  
+        url('../fonts/neuzeit/neuzeit-light.eot') format('embedded-opentype');
+}
+
+@font-face {  
+  font-family: "neuzeit-bold";  
+  src:  url('../fonts/neuzeit/neuzeit-bold.ttf') format('truetype'),  
+        url('../fonts/neuzeit/neuzeit-bold.otf') format('opentype'),  
+        url('../fonts/neuzeit/neuzeit-bold.woff') format('woff'),  
+        url('../fonts/neuzeit/neuzeit-bold.eot') format('embedded-opentype');
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -6,31 +22,6 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-@font-face {  
-  font-family: "neuzeit-light";  
-  src:  url('fonts/neuzeit/neuzeit-light.ttf') format('truetype'),  
-        url('fonts/neuzeit/neuzeit-light.otf') format('opentype'),  
-        url('fonts/neuzeit/neuzeit-light.woff') format('woff'),  
-        url('fonts/neuzeit/neuzeit-light.eot') format('embedded-opentype');
-}
-
-@font-face {  
-  font-family: "neuzeit-bold";  
-  src:  url('fonts/neuzeit/neuzeit-bold.ttf') format('truetype'),  
-        url('fonts/neuzeit/neuzeit-bold.otf') format('opentype'),  
-        url('fonts/neuzeit/neuzeit-bold.woff') format('woff'),  
-        url('fonts/neuzeit/neuzeit-bold.eot') format('embedded-opentype');
-}
-
-@font-face {  
-  font-family: "bodoni";  
-  src:  url('fonts/bodoni/bodoni.ttf') format('truetype'),  
-        url('fonts/bodoni/bodoni.otf') format('opentype'),  
-        url('fonts/bodoni/bodoni.woff') format('woff'),  
-        url('fonts/bodoni/bodoni.eot') format('embedded-opentype');
-}
-
-
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -80,19 +71,29 @@ height: 100%;
 }
 
 body {
-background: url('images/dark_wall_@2X.png') 0 0 repeat;
+background: #fff;
 color: #d9d56c;
-font-family: "neuzeit-bold", helvetica, arial, sans-serif;
 }
 
 section {
-margin: 40% auto;
-width: 30em;
+margin: 8% auto;
+width: 60%;
 }
 
 p {
-font-size: 4em;
+font-family: "neuzeit-light", helvetica, arial, sans-serif;
+font-size: 1.9em;
 text-transform: uppercase;
-line-height: 1em;
-padding: 10px 0;
+line-height: 1.4em;
+padding: 0;
+}
+
+strong {
+font-family: "neuzeit-bold", helvetica, arial, sans-serif;
+font-size: 1.4em;
+}
+
+p:last-child {
+font-size: 1em;
+letter-spacing: .5em;
 }
